@@ -1,0 +1,63 @@
+<morphology xmlns = "RSME.simulation_parameters">
+
+  <morphology_description> TEST </morphology_description>
+  
+  <morphologies>
+    
+      <morphology_id id = "0" fix_function = "morphology_adhoc_fix">
+
+        <morphology_hoc_file> SAChocLea.hoc </morphology_hoc_file>
+
+        <section_diameter>
+            <math>
+                <apply> 
+                    <plus/> 
+                    <apply>
+                        <times/>
+                        <cn> 0.2 </cn>
+                        <apply> 
+                            <ci> exp </ci> 
+                            <apply>
+                                <divide/>
+                                <ci> -x  </ci>
+                                <cn> 40 </cn>
+                            </apply>
+                        </apply>
+                    </apply>
+                    <cn> 0.15 </cn>
+                </apply>
+            </math>
+        </section_diameter>
+
+      </morphology_id>
+      
+      <morphology_id id = "1" fix_function = "None">
+
+        <morphology_hoc_file> cell_12_trace.hoc</morphology_hoc_file>
+
+        <section_diameter>
+            <math>
+                <apply> 
+                    <plus/> 
+                    <apply>
+                        <times/>
+                        <cn> 0.2 </cn>
+                        <apply> 
+                            <ci> exp </ci> 
+                            <apply>
+                                <divide/>
+                                <ci> -x  </ci>
+                                <cn> 40 </cn>
+                            </apply>
+                        </apply>
+                    </apply>
+                    <cn> 0.15 </cn>
+                </apply>
+            </math>
+        </section_diameter>
+
+      </morphology_id>
+      
+    </morphologies>
+    
+</morphology>

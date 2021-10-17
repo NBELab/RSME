@@ -1,0 +1,11 @@
+<simulation_parameters xmlns="RSME">
+
+  <simulation_description> single_SAC  </simulation_description>
+  <simulation_duration>    1500        </simulation_duration>
+
+  <visual_stimulation> single_SAC_bar_lin_illum.xml  </visual_stimulation>
+  <network>            single_SAC_network_lin_illum.xml           </network>
+  <morphology>         single_SAC_morphology_lin_illum.xml        </morphology>
+  <biophysics>         single_SAC_biophysics_lin_illum.xml        </biophysics>
+
+</simulation_parameters>

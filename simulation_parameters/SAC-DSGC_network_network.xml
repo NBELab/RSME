@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network xmlns="RSME.simulation_parameters">
+  <network_description> TEST </network_description>
+  <populations>
+    <population name="SACs" cell_id="0">
+        <layered_2d_grid>
+            <grid_arrangement>
+                <rectangular_location>
+                    <corner x="0" y="0" z="0" />
+                    <cells_number x="3" y="3" />
+                </rectangular_location>
+                <spacing x="125" y="125" />
+                <synapse type="TBD" />
+            </grid_arrangement>
+            <grid_arrangement>
+                <rectangular_location>
+                    <corner x="62" y="67" z="0" />
+                    <cells_number x="2" y="2" />
+                </rectangular_location>
+                <spacing x="125" y="125" />
+                <synapse type="TBD" />
+            </grid_arrangement>
+        </layered_2d_grid>    
+    </population>
+
+    <population name="RGCs" cell_id="1">
+      <instances size="1">
+        <instance id="0">
+          <location x="0" y="0" z="0" />
+        </instance>
+      </instances>
+    </population>
+  </populations>
+  
+  <projections>
+    <projection source="0" target="1" name="SACs-RGCs">
+      <synapse>
+        <preffered_direction type="cosine_similarity" x="1" y="0" />
+      </synapse>
+      <connectivity_pattern>
+        <x_y_intersection>
+          <x_y_alignment x="135" y="100" />
+        </x_y_intersection>
+      </connectivity_pattern>
+    </projection>
+  </projections>
+</network> 

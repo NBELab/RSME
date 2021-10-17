@@ -1,0 +1,69 @@
+<biophysics xmlns = "RSME.simulation_parameters">
+
+  <biophysics_description> TEST </biophysics_description>
+
+  <biophysics_models>
+
+    <synapses>
+
+        <synapse name='light_synapse' type='spatially_dependent_dynamic' phase = 'on'>
+
+            <density_function>
+                <math>
+                    <apply>
+                        <plus/>
+                        <cn> 0 </cn>
+                        <apply>
+                            <times/>
+                            <apply>
+                                <lt/>
+                                <ci> x </ci>
+                                <cn> 125 </cn>
+                            </apply> 
+			                <cn> 0.2 </cn>
+                         </apply>
+                    </apply>
+                </math>
+            </density_function>
+            
+            <weight>
+                <math>
+                    <cn> 0.8 </cn>
+                </math>
+            </weight>
+            
+        </synapse>
+
+    </synapses>
+
+    <cells>
+
+        <cell_id id = "0" >
+
+            <cytoplasmic_resistivity> 75 </cytoplasmic_resistivity>
+            <capicitance> 1 </capicitance>
+
+            <channels_spatial_distribution>
+                <pas>
+                    <g_pas>
+                        <math>
+                            <cn> 0.00006 </cn>
+                        </math>
+                    </g_pas>
+
+                    <e_pas>
+                        <math>
+                            <cn> -60 </cn>
+                        </math>
+                    </e_pas>
+
+                </pas>
+
+            </channels_spatial_distribution>
+
+        </cell_id>
+
+     </cells>
+  </biophysics_models>
+
+</biophysics>

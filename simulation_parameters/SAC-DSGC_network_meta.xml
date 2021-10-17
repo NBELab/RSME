@@ -1,0 +1,12 @@
+
+<simulation_parameters xmlns="RSME">
+
+  <simulation_description> SAC-DSGC_network </simulation_description>
+  <simulation_duration>    1500        </simulation_duration>
+
+  <visual_stimulation> SAC-DSGC_network_visual_bars.xml  </visual_stimulation>
+  <network>            SAC-DSGC_network_network.xml      </network>
+  <morphology>         SAC-DSGC_network_morphology.xml   </morphology>
+  <biophysics>         SAC-DSGC_network_biophysics.xml   </biophysics>
+
+</simulation_parameters>

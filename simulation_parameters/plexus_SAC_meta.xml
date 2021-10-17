@@ -1,0 +1,12 @@
+
+<simulation_parameters xmlns="RSME">
+
+  <simulation_description> plexus_SAC </simulation_description>
+  <simulation_duration>    1500        </simulation_duration>
+
+  <visual_stimulation> plexus_SAC_visual_expanding.xml  </visual_stimulation>
+  <network>            plexus_SAC_network.xml               </network>
+  <morphology>         plexus_SAC_morphology.xml                   </morphology>
+  <biophysics>         plexus_SAC_biophysics.xml        </biophysics>
+
+</simulation_parameters>

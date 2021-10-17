@@ -1,0 +1,16 @@
+<visual_stimulation xmlns = "RSME.simulation_parameters">
+
+  <stimulation_description> Alternating expanding rings of light </stimulation_description>
+ 
+  <stimulation type = 'alternating_expanding_circles'>
+      <tgt_population> 0                </tgt_population>
+      <synapse>        'light_synapse'  </synapse>
+      <field>          315              </field> 
+      <frequancy>      4                </frequancy> 
+      <blocked_field>  0                </blocked_field> 
+      <x0>             135              </x0>
+      <y0>             125              </y0>
+      <delay>          0                </delay>
+  </stimulation>
+    
+</visual_stimulation>
